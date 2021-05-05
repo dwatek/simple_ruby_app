@@ -26,9 +26,12 @@ GEM
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
     builder (3.2.4)
+    cgi (0.2.0)
     concurrent-ruby (1.1.8)
     crass (1.0.6)
     dotenv (2.7.6)
+    erb (2.2.3)
+      cgi
     erubi (1.10.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
@@ -66,16 +69,20 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
+    yaml (0.1.1)
     zeitwerk (2.4.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord
   dotenv
+  erb
   pg
   rake
   standalone_migrations
+  yaml
 
 RUBY VERSION
    ruby 2.7.2p137
