@@ -11,3 +11,7 @@ gem 'pg'
 gem 'rake'
 gem 'standalone_migrations'
 gem 'yaml'
+
+group :development do
+  gem 'pry'
+end
