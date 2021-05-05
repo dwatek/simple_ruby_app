@@ -10,6 +10,8 @@ require 'erb'
 
 require 'app/models/post'
 
+require 'app/runner'
+
 Dotenv.load(".env.#{ENV.fetch('ENVIRONMENT')}.local", ".env.#{ENV.fetch('ENVIRONMENT')}", '.env')
 
 def db_configuration
