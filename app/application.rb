@@ -8,6 +8,8 @@ require 'dotenv'
 require 'yaml'
 require 'erb'
 
+require 'app/models/post'
+
 Dotenv.load(".env.#{ENV.fetch('ENVIRONMENT')}.local", ".env.#{ENV.fetch('ENVIRONMENT')}", '.env')
 
 def db_configuration
